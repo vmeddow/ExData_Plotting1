@@ -20,7 +20,7 @@ with(sub, {
     plot(Global_active_power~Datetime, type="l", 
          ylab="Global Active Power (kilowatts)", xlab="")
     plot(Voltage~Datetime, type="l", 
-         ylab="Voltage (volt)", xlab="")
+         ylab="Voltage (volt)", xlab="datetime")
     plot(Sub_metering_1~Datetime, type="l", 
          ylab="Energy sub metering", xlab="")
     lines(Sub_metering_2~Datetime,col='Red')
@@ -28,7 +28,7 @@ with(sub, {
     legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty="n",
            legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     plot(Global_reactive_power~Datetime, type="l", 
-         ylab="Global_reactive_power",xlab="")
+         ylab="Global_reactive_power",xlab="datetime")
 })
 
 ## Save Plot 4 to 480x480 png
